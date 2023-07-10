@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Industrial</title>
+  <link rel="stylesheet" href="https://www.emarketplace.in.skf.com/landing/4crb/Index.css" />
+  <link rel="stylesheet" href="https://www.emarketplace.in.skf.com/b2b/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhL
+      nuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .form-container{
+            max-width: 100% !important;
+        }
+
+        @media screen and (min-width: 768px) {
+        /* Desktop View */
+        .form-container {
+            margin-left: 15%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        /* Mobile View */
+        .form-container {
+            margin: 0;
+        }
+    }
+        
+
+    </style>
+</head>
+
+<body>
+  <div class="container-fluid" id="first-container">
+    <div class="container">
+      <div class="row after-navbar-padding" id="show">
+        <div class="col-md-6 Industrial-safety">
+          <p class="Complete-line">
+            Enhance your rolling mills with SKF four-row cylindrical bearings<span class="Industrial-big"><br> Helping
+              you reduce total cost of ownership,by increasing equipment uptime and productivity </span>
+
+          </p>
+        </div>
+        <div class="col-md-6 pb-3">
+          <div className="col-lg-4 col-md-4" id="formcolumn-equel">
+            <div class="form-container">
+              <form action="https://www.emarketplace.in.skf.com/enquire-save" method="post" id="enquire_form"
+              enctype="multipart/form-data">
+                <h2 class="contact-us">Enquire Now  </h2>
+                <input type="hidden" name="_token" value="yDzpDBhR2r2dtEs1HEFqed3kOTzyQwP5PQL6S6Zx">                <div class="row">
+                  <div class="col-md-12">
+                    <input type="text" placeholder="Your name" name="name">
+                  </div>
+                  <div class="col-md-12">
+                    <input type="text" placeholder="Email ID" name="email" >
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" placeholder="Mobile number"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                    onkeydown="limit(this, 10);" onkeyup="limit(this, 10);"
+                    onkeyup="this.value = minmax(this.value, 0, 10)" maxlength="10" pattern="^[0-9]*$"
+                    name="mobile" >
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" placeholder="Subject" name="subject">
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" placeholder="Company" name="company">
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" placeholder="Pincode" name="pincode" onchange="return getPincode(this.value)"
+                      id="pincode">
+                  </div>
+                  <input type="hidden" placeholder="type" name="type" id="type" value="4-rcrb">
+                  <div class="col-md-12">
+                    <input type="text" placeholder="City" name="city" id="city">
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" placeholder="State" name="state" id="state">
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="file" placeholder="attachment file" class="form-control" name="file">
+                  </div>
+&nbsp;
+                  <div class="col-md-12">
+                    <textarea name="message" placeholder="Tell us your requirement"></textarea>
+                  </div>
+
+                </div>
+
+                <input type="checkbox" class="terms" name="terms" value="true" style="font-size: 30px;" />
+                <span style="color: #fff;"> I accept the <a href="https://www.emarketplace.in.skf.com/terms-and-conditions" target="_blank">Terms and conditions </a></span>
+
+                <div class="pt-3">
+                  <button id="industrial-button" class="submitbutton enq-submit" >SUBMIT</button>
+                </div>
+                <!-- <div id="loaderEnshow" style="display:none">
+                    <img class="img-fluid m-auto" src="https://www.emarketplace.in.skf.com/b2b/images/loader.gif" width="150" />
+                </div> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      </div>
+    </div>
+  </div>
+
+
+  <section class="padding-top">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-2 col-sm-3 iconn">
+          <!-- <h3 style="color: #485a64;">Innovations</h3> -->
+          <div>
+            <img src="https://www.emarketplace.in.skf.com/landing/4crb/SKFBlue.png" height="70px">
+            <!-- <i class="bi bi-gear Industrial-icon"></i> -->
+          </div>
+          <p class="massahe-of-card">High load carrying capacity
+        </div>
+
+        <div class="col-lg-2 col-sm-3 iconn">
+          <!-- <h3 style="color: #485a64;">People & Culture</h3> -->
+          <div>
+            <img src="https://www.emarketplace.in.skf.com/landing/4crb/EnhancedReliabilit-SKF Blue.png" height="70px">
+            <!-- <i class="bi bi-server Industrial-icon"></i> -->
+          </div>
+          <p class="massahe-of-card">Enhanced operational reliability
+        </div>
+
+        <div class="col-lg-2 col-sm-3 iconn">
+          <!-- <h3 style="color: #485a64;">People & Culture</h3> -->
+          <div>
+            <img src="https://www.emarketplace.in.skf.com/landing/4crb/Easy&amp;ReliableMountingSKFBlue.png" height="70px">
+            <!-- <i class="bi bi-basket2-fill Industrial-icon"></i> -->
+          </div>
+          <p class="massahe-of-card">Easy and reliable mounting
+        </div>
+
+        <div class="col-lg-2 col-sm-3 iconn">
+          <!-- <h3 style="color: #485a64;">People & Culture</h3> -->
+          <div>
+            <img src="https://www.emarketplace.in.skf.com/landing/4crb/HighWeartanceSKFBlue.png" height="70px">
+            <!-- <i class="bi bi-server Industrial-icon"></i> -->
+          </div>
+          <p class="massahe-of-card">Hight wear resistant
+        </div>
+
+        <div class="col-lg-2 col-sm-3 iconn">
+          <!-- <h3 style="color: #485a64;">Solutions  Glance</h3> -->
+          <div>
+            <img src="https://www.emarketplace.in.skf.com/landing/4crb/SKFBlue.png" height="70px">
+          </div>
+          <p class="massahe-of-card">Lowered total cost of ownership
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container-fluid banner padding-top">
+      <div class="container">
+        <h3 class="contact-us">About SKF four-row cylindrical roller bearings</h3>
+        <p class="first-pragraf">
+          SKF four-row cylindrical roller bearings come with improved metallurgy, offering higher wear and crack
+          resistance capability, translating into longer and reliable service life.Four-row cylindrical roller bearings
+          are used almost exclusively for the roll necks of rolling mill stands, calenders and roller presses. Because
+          they are normally mounted with an interference fit on the roll neck, four-row cylindrical roller bearings are
+          well suited for rolling mill applications where the rolling speed is high.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row  no-gutters">
+        <div class="col-md-6">
+          <img src="https://www.emarketplace.in.skf.com/landing/4crb/4rCRBProductImage.jpg" class="Industrial-image" alt=" " />
+        </div>
+        <div class="col-md-6">
+          <h4 style="color: #485a64;">Increase production uptime. Reduce total cost of ownership
+          </h4>
+
+          <p> <strong>Long service life</strong> : The logarithmic roller profile reduces edge stresses at the
+            roller/raceway contact and sensitivity to misalignment and shaft deflection.
+            <br><strong>Enhanced operational reliability</strong> : The surface finish on the contact surfaces of the
+            rollers and raceways supports the formation of a hydrodynamic lubricant film.
+            
+            <br><strong> High speed capability</strong> :
+            The cage designs are suitable for high speeds, rapid accelerations and peak loads.
+            <br><strong>Low cross-sectional height</strong> : The low cross-sectional height of four-row cylindrical roller
+            bearings allows for relatively large roll neck diameters compared to the roll diameter.
+          </p>
+
+        </div>
+        <!-- frist col -->
+        <div class="col-md-6">
+          <h4 style="color: #485a64;">Achieve the perfect balance between meeting customer needs and maximizing profits </h4>
+          <p>
+            If a bearing fails, all production must be stopped causing costly, unplanned downtime. At the same time,
+            there is constant pressure to optimize production and cut costs.
+          </p>
+          <p>
+            The SKF four-row cylindrical roller bearing is a new reliable bearing design, replacing the older designs and now being localized for faster availability. All needed advanced technical features have been maximized and put in place to achieve the longest possible service life by performance and robustness.The bearing also has features for more reliable mounting, resulting in lower TCO due to less maintenance needed. 
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://www.emarketplace.in.skf.com/landing/4crb/Microsoft.png" class="" style="width: 101%;
+          height: 327px;" alt=" " />
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row  no-gutters">
+        <div class="col-md-6">
+          <img src="https://www.emarketplace.in.skf.com/landing/4crb/Longrolling mill.jpg" class="" style="width: 97%;
+          height: 327px;" alt=" " />
+        </div>
+        <div class="col-md-6">
+          <h2 style="color: #485a64;">Improvements & Features</h2>
+          <p>
+            • Increased surface hardness and improved roughness
+          </p>
+          <p>
+            • Up to 15% dynamic load rating increase </p>
+          <p>
+            • Optimized cage geometry </p>
+          <p>
+            • Optimized roller drop and chamfer design </p>
+          <p>
+            • Optimized roller & raceway profiles </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- <section style="padding-top: 80px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <iframe class="Industrial-card" src="https://www.youtube.com/embed/J7yt0yCPWho" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <iframe class="Industrial-card" src="https://www.youtube.com/embed/J7yt0yCPWho" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <iframe class="Industrial-card" src="https://www.youtube.com/embed/J7yt0yCPWho" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+
+  </section class="pt-3 pb-3">
+  <footer class="skf-footer">
+    <div class="col-12">
+      <div class="row top-footer">
+        <div class="container">
+          <div class="row py-3 footer-inner">
+            <div class="col-sm-12 footer-right">
+              <div class="row">
+                <div class="col-xl-3 col-sm-3 footer-middle">
+                  <h6 class="">Get to know us</h6>
+                  <ul class="list-unstyled p-0 mt-3 foot1">
+                    <li>
+                      <a href="https://www.emarketplace.in.skf.com/about-us" target="_blanck"
+                        class="body-text font-weight-thin">About SKF India</a>
+                    </li>
+                    <li>
+                      <a id="show-contact-dtls" href="javascript:void(0);" class="body-text font-weight-thin">Contact
+                        us</a>
+                    </li>
+                    <div class="contact-dtls">
+                      <p><img src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/Icons/email1.png" width="24"
+                          alt="Email" class="mr-2"><a
+                          onclick="gtag('event', 'click', { event_category: 'Help and Support', event_action: 'click', event_label: 'enquiry.onlineindia@skf.com'});"
+                          href="mailto:enquiry.onlineindia@skf.com">
+                          enquiry.onlineindia@skf.com</a></p>
+
+                      <p><img src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/phone-icon.png" width="24"
+                          alt="Phone" class="mr-2"><a href="tel:+918530410888"
+                          onclick="gtag('event', 'click', {'event_category':'Call Button','event_label':'Call'})">+91-8530410888</a>
+                      </p>
+                    </div>
+                  </ul>
+                </div>
+                <div class="col-xl-3 col-sm-3 col-6 footer-middle">
+                  <h6 class="">Shop now</h6>
+                  <ul class="list-unstyled p-0 mt-3 foot2">
+                    <li class="body-text font-weight-thin">
+                      <a href="https://www.emarketplace.in.skf.com/industrial/bearings/ball-bearings">
+                        Ball bearings
+                      </a>
+                    </li>
+                    <li class="body-text font-weight-thin">
+                      <a href="https://www.emarketplace.in.skf.com/industrial/bearings/roller-bearings">
+                        Roller bearings
+                      </a>
+                    </li>
+                    <li class="body-text font-weight-thin">
+                      <a href="https://www.emarketplace.in.skf.com/industrial/bearings/housings-and-accessories">
+                        Housings and accessories
+                      </a>
+                    </li>
+                    <li class="body-text font-weight-thin">
+                      <a href="https://www.emarketplace.in.skf.com/industrial/bearings/insert-ball-bearing">
+                        Insert/Y/UC ball bearing
+                      </a>
+                    </li>
+                    <li class="body-text font-weight-thin">
+                      <a href="https://www.emarketplace.in.skf.com/industrial/bearings/maintenance-products">
+                        Maintenance products
+                      </a>
+                    </li>
+
+                    <li class="body-text font-weight-thin">
+                      <a href="https://www.emarketplace.in.skf.com/industrial/bearings/lubricants">
+                        Lubrication products
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-3 col-sm-3 col-6 footer-middle">
+                  <h6 class="">Customer services</h6>
+                  <ul class="list-unstyled p-0 mt-3 foot3">
+                    <li><a href="https://www.emarketplace.in.skf.com/faq" class="body-text font-weight-thin">FAQs</a>
+                    </li>
+                    <li><a href="https://www.emarketplace.in.skf.com/help-and-supports"
+                        class="body-text font-weight-thin">Help and support</a></li>
+                    <li><a href="https://www.emarketplace.in.skf.com/return-policy"
+                        class="body-text font-weight-thin">Return policy</a></li>
+                    <li><a href="https://www.emarketplace.in.skf.com/privacy-policy"
+                        class="body-text font-weight-thin">Privacy policy</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-xl-3 col-sm-3 social">
+                  <div class="mb-md-5 d-inline-block social-connects">
+                    <h6 class="">Follow us on</h6>
+                    <div class="social-media pt-3 foot4">
+                      <a class="mr-2" href="https://www.facebook.com/SKFIndia/" target="_blank">
+                        <img class="" src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/Icons/facebook.png"
+                          width="30" alt="facebook" title="Facebook">
+                      </a>
+                      <a class="mr-2" href="https://www.instagram.com/skfgroup/" target="_blank">
+                        <img class="" src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/Icons/instagram.png"
+                          alt="SKF Instagram" title="SKF Instagram" width="30">
+                      </a>
+                      <a class="mr-2" href="https://twitter.com/skfindia" target="_blank">
+                        <img class="" src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/Icons/twitter.png"
+                          width="30" alt="twitter" title="Twitter">
+                      </a>
+                      <a class="mr-2" href="https://www.youtube.com/user/SKFOfficial" target="_blank">
+                        <img class="" src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/Icons/youtube.png"
+                          width="30" alt="youtube" title="Youtube">
+                      </a>
+                      <a href="https://www.linkedin.com/company/skf-india-limited" target="_blank">
+                        <img class="" src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/Icons/linkedin.png"
+                          width="30" alt="linkedin" title="Linkedin">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="email-us">
+                    <h6 class="writeus">Write to us</h6>
+                    <p class="footer-email"><i class="mr-2 fa fa-inbox"></i>
+                      <a href="mailto:enquiry.onlineindia@skf.com"
+                        onclick="gtag('event', 'click', { event_category: 'Help and Support', event_action: 'click', event_label: 'enquiry.onlineindia@skf.com'});">enquiry.onlineindia@skf.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row blue-bg copyright-footer">
+        <div class="container">
+          <div class="row bottom-footer py-3 text-center">
+            <div class="container text-white">
+              <div class="row align-items-center">
+                <div class="col-md-5 p-0 text-left foot-logosec">
+                  <span class="foot-logo"><img class="img-fluid footer-logo"
+                      src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/skf-logo.png" alt="SKF" title="SKF"
+                      width="100">
+                  </span>
+                  <a href="https://www.skf.com/in" target="_blank" class="ml-4 text-white">
+                    <img class="mr-2" src="https://d1heg82t2fu93i.cloudfront.net/b2b/images/globe-icon-white.png"
+                      alt="Region" title="Region" width="16">www.skf.com/in
+                  </a>
+                </div>
+
+                <div class="col-md-7 p-md-0 text-right copyright">
+                  <p class="m-0 pr-5 mr-3">© Copyright</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+     <script src="https://www.emarketplace.in.skf.com/landing/spindle/js/jquery-min.js"></script>
+     <script src="https://www.emarketplace.in.skf.com/landing/spindle/js/bootstrap.min.js"></script>   
+     <script src="https://www.emarketplace.in.skf.com/landing/spindle/js/main.js"></script>
+     <script type="text/javascript">
+                                                    function getPincode(pincode) {
+                                                        if (pincode.length == 6) {
+ 
+                                                            $.ajax({
+                                                                url: "https://www.emarketplace.in.skf.com/get-pincode",
+                                                                type: 'get',
+                                                                dataType: "json",
+                                                                data: {
+                                                                    'pincode': pincode,
+                                                                    '_token': "yDzpDBhR2r2dtEs1HEFqed3kOTzyQwP5PQL6S6Zx"
+                                                                },
+                                                                success: function (data) {
+                                                                    if (data.message == 'True') {
+                                                                        $('#district').val(data.data.district);
+                                                                        $('#city').val(data.data.district);
+                                                                        $('#state').val(data.data.state);
+ 
+                                                                    } else {
+                                                                        $('#district').val('');
+                                                                        $('#city').val('');
+                                                                        $('#state').val('');
+ 
+                                                                    }
+                                                                },
+                                                            });
+                                                        }
+                                                    }
+                                                    function getPincoded(pincode) {
+                                                        if (pincode.length == 6) {
+ 
+                                                            $.ajax({
+                                                                url: "https://www.emarketplace.in.skf.com/get-pincode",
+                                                                type: 'get',
+                                                                dataType: "json",
+                                                                data: {
+                                                                    'pincode': pincode,
+                                                                    '_token': "yDzpDBhR2r2dtEs1HEFqed3kOTzyQwP5PQL6S6Zx"
+                                                                },
+                                                                success: function (data) {
+ 
+                                                                    if (data.message == 'True') {
+                                                                        $('.bulk_city').val(data.data.district);
+                                                                        $('.bulk_state').val(data.data.state);
+                                                                    } else {
+                                                                        $('.bulk_city').val('');
+                                                                        $('.bulk_state').val('');
+                                                                    }
+                                                                },
+                                                            });
+                                                        }
+                                                    }
+ 
+ 
+     </script>   
+ 
+     <script>
+         $(document).ready(function () {
+ 
+             $('#enquire_form').submit(function (e) {
+                 $('.error').remove();
+                 $('.error2').remove();
+                 e.preventDefault();
+                 var formData = new FormData(this);
+                 let url = $(this).attr('action');
+                 $('.error1').remove();
+                 $.ajax({
+                     url: url,
+                     type: 'POST',
+                     data: formData,
+                     headers: {
+                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                     },
+                     cache: false,
+                     contentType: false,
+                     processData: false,
+                     beforeSend: function () {
+                         $('#loaderEnshow').show();
+                         $('#buttonEnhide').hide();
+                     },
+                     success: function (response) {
+                         window.location.href = "https://www.emarketplace.in.skf.com/industrial/thank-you";
+                     },
+                     error: function (response) {
+                         $('#loaderEnshow').hide();
+                         $('#buttonEnhide').show();
+                         $.each(response.responseJSON.errors, function (field_name, error) {
+                             $(document).find('[name=' + field_name + ']').after('<span style="color:red" class="text-strong textdanger error1">' + error + '</span>');
+                         });
+                     }
+                 });
+             });
+         });
+     </script>
+</body>
+
+</html>
