@@ -25,4 +25,15 @@ app.post("/", async (req, resp) => {
 /* 
 put method ------> to update the data in database through api
 */
+
+app.put("/:name", async (req, resp) => {
+  let data = await dbConnection();
+  let result = await data.updateOne(
+    { name: req.params.name }, //condition
+    {
+      $set: req.body,
+    }
+  );
+  resp.send({ result: "result updated data" });
+});
 app.listen(7000);
