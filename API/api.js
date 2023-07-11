@@ -1,5 +1,6 @@
 const dbConnection = require("../ConnectMongoDB/mongoDB");
 const express = require("express");
+const mongodb = require("mongodb");
 const app = express();
 
 app.use(express.json());
@@ -35,5 +36,15 @@ app.put("/:name", async (req, resp) => {
     }
   );
   resp.send({ result: "result updated data" });
+});
+//delete method---->to delete a particular record of given id using DELETE request with API endpoint /
+app.delete("/:id", async (req, resp) => {
+  console.log(req.params.id);
+  const data = await dbConnection();
+  const result = await data.deleteOne({
+    _id: new mongodb.ObjectId(req.params.id),
+  });
+  resp.send(result);
+  // resp.send("done");
 });
 app.listen(7000);
