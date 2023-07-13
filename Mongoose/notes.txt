@@ -19,6 +19,8 @@ difference btween Mongoose and mongodb package
 makes your life easier when working with complex schemas.
 - You don't need to write raw queries anymore - everything's done through models
 
+
+
 explain schema
 In Mongoose, each document/object must have a corresponding Schema defined using the `mongoose.Schema
 ()` method. This creates an object containing all the necessary information about how this particular model should 
@@ -50,3 +52,17 @@ const User = new mongoose.Schema({
         the next
         lines specify alphanumeric characters only restriction for the `username`.
         
+
+explain mongoose
+query builder
+is used to perform CRUD operations easily without writing any SQL query statements manually
+
+{
+  "_id": {
+    "$oid": "64ad4a52b684e844c2881b89"
+  },
+  "name": "Jane Smith",
+  "mobile_name": "Samsung Galaxy S21",
+  "category": "Smartphone",
+  "price": 899
+}
