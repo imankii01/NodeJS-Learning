@@ -1,0 +1,8 @@
+make confid file for mongodb
+make post route
+ger data form the postman and save in db
+interview question
+
+******** in this tutorial we made a perfect api with schema and rules regulation
+we made post ,get,put,delet
+the difffernce between pervious api and thsi api is that ,in this we made a perfect api with schema 
